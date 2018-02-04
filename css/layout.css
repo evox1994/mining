@@ -1557,4 +1557,7 @@ input:-moz-placeholder {
 	.b-6 .otvet {
 		padding: 20px 10px 10px;
 	}
+	.b-2 a::after {
+		display: none;
+	}
 }
