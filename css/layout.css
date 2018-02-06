@@ -103,6 +103,9 @@ input:-moz-placeholder {
 	font-weight: 300;
 	position: relative;
 }
+.header-nav a:hover {
+	text-decoration: underline;
+}
 .header-nav a::before {
 	content: '';
 	display: block;
@@ -124,6 +127,9 @@ input:-moz-placeholder {
 	padding-left: 32px;
 	text-decoration: underline;
 	color: rgb(152, 217, 244);
+}
+.header-nav a.bizness-a:hover {
+	text-decoration: none;
 }
 .header-nav a.bizness-a:hover {
 	text-decoration: none;
@@ -314,9 +320,15 @@ input:-moz-placeholder {
 	background-color: #ffb54c;
 	border-radius: 26px;
 	border: 0;
+	-webkit-transition: all 0.5s;
+	-moz-transition: all 0.5s;
+	-ms-transition: all 0.5s;
+	-o-transition: all 0.5s;
+	transition: all 0.5s;
 }
 .b-1 .block-2 input:hover {
 	cursor: pointer;
+	background-color: #dd952f;
 }
 .b-1 .block-2 p {
 	display: block;
@@ -325,6 +337,17 @@ input:-moz-placeholder {
 	font-size: 11px;
 	line-height: 1.1;
 	font-weight: 300;
+}
+
+.politycs-a {
+	font-size: 11px;
+	color: #ffffff;
+	text-decoration: underline;
+	line-height: 1.1;
+	font-weight: 300;
+}
+.politycs-a:hover {
+	text-decoration: none;
 }
 
 .b-2 .b-block {
@@ -338,17 +361,16 @@ input:-moz-placeholder {
 	color: #000000;
 	margin-bottom: 60px;
 }
-.b-2 p {
-	display: block;
-	color: #000000;
-	font-weight: 300;
+.b-2 .curs-code a {
 	font-size: 14px;
+	font-weight: 300;
 }
-.b-2 p .pov {
-	color: #48c94f;
-}
-.b-2 p .pon {
-	color: #d70000;
+.pust {
+    position: relative;
+    z-index: 2;
+    width: 100%;
+    min-height: 50px;
+    margin-top: -35px;
 }
 .b-2 .arguments {
 	margin-top: 30px;
@@ -470,7 +492,7 @@ input:-moz-placeholder {
 	color: rgb(60, 142, 187);
 	font-weight: 300;
 }
-.b-2 a {
+.b-2-a {
 	display: inline-block;
 	background-color: #ffb54c;
 	box-shadow: 0px 6px 13px 0px rgba(16, 5, 0, 0.21);
@@ -479,8 +501,16 @@ input:-moz-placeholder {
 	padding: 15px 50px;
 	border-radius: 26px;
 	position: relative;
+	-webkit-transition: all 0.5s;
+	-moz-transition: all 0.5s;
+	-ms-transition: all 0.5s;
+	-o-transition: all 0.5s;
+	transition: all 0.5s;
 }
-.b-2 a::after {
+.b-2-a:hover {
+	background-color: #dd952f;
+}
+.b-2-a::after {
 	content: '';
 	position: absolute;
 	display: block;
@@ -760,9 +790,15 @@ input:-moz-placeholder {
 	background-color: #ffb54c;
 	border-radius: 26px;
 	border: 0;
+	-webkit-transition: all 0.5s;
+	-moz-transition: all 0.5s;
+	-ms-transition: all 0.5s;
+	-o-transition: all 0.5s;
+	transition: all 0.5s;
 }
 .b-3 .block-2 input:hover {
 	cursor: pointer;
+	background-color: #dd952f;
 }
 .b-3 .block-2 p {
 	display: block;
@@ -880,6 +916,14 @@ input:-moz-placeholder {
 	font-weight: 300;
 	box-shadow: 0px 6px 13px 0px rgba(16, 5, 0, 0.21);
 	border-radius: 27px;
+	-webkit-transition: all 0.5s;
+	-moz-transition: all 0.5s;
+	-ms-transition: all 0.5s;
+	-o-transition: all 0.5s;
+	transition: all 0.5s;
+}
+.b-4 .el a:hover {
+	background-color: #dd952f;
 }
 
 .b-5 {
@@ -1088,6 +1132,14 @@ input:-moz-placeholder {
 	box-shadow: 0px 6px 13px 0px rgba(16, 5, 0, 0.21);
 	border-radius: 27px;
 	position: relative;
+	-webkit-transition: all 0.5s;
+	-moz-transition: all 0.5s;
+	-ms-transition: all 0.5s;
+	-o-transition: all 0.5s;
+	transition: all 0.5s;
+}
+.b-5 .option a:hover {
+	background-color: #dd952f;
 }
 .b-5 .option .el-5 {
 	padding-left: 64px;
@@ -1195,6 +1247,14 @@ input:-moz-placeholder {
 	display: block;
 	width: 100%;
 	padding: 20px 0;
+	-webkit-transition: all 0.5s;
+	-moz-transition: all 0.5s;
+	-ms-transition: all 0.5s;
+	-o-transition: all 0.5s;
+	transition: all 0.5s;
+}
+.b-6 .el-btn a:hover {
+	background-color: #dd952f;
 }
 .b-6 .otvet {
 	display: none;
@@ -1221,6 +1281,14 @@ input:-moz-placeholder {
 	border-radius: 26px;
 	position: relative;
 	margin-top: 40px;
+	-webkit-transition: all 0.5s;
+	-moz-transition: all 0.5s;
+	-ms-transition: all 0.5s;
+	-o-transition: all 0.5s;
+	transition: all 0.5s;
+}
+.b-6-a:hover {
+	background-color: #dd952f;
 }
 
 .b-7 {
@@ -1317,9 +1385,15 @@ input:-moz-placeholder {
 	border: 0;
 	border-radius: 29px;
 	margin-bottom: 15px;
+	-webkit-transition: all 0.5s;
+	-moz-transition: all 0.5s;
+	-ms-transition: all 0.5s;
+	-o-transition: all 0.5s;
+	transition: all 0.5s;
 }
 .b-7-application form .form-btn:hover {
 	cursor: pointer;
+	background-color: #dd952f;
 }
 .b-7-application form p {
 	display: block;

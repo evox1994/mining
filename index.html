@@ -73,11 +73,11 @@
 					<h3 class="top-h">Начни сейчас! Получи бизнес-план от нашего консультанта в течение <span>5 минут!</span></h3>
 					<h3 class="bottom-h">Для первых 10 партнеров - <span>скидка 10%!</span></h3>
 					<div class="inp-block block-1">
-						<input type="tel" required placeholder="Ваш телефон для связи">
+						<input type="tel" class="input-phone" required placeholder="Ваш телефон для связи">
 					</div>
 					<div class="inp-block block-2">
 						<input type="submit" value="Узнать подробнее">
-						<p>Оставляя заявку, Вы соглашаетесь с<br>политикой конфиденциальности</p>
+						<p>Оставляя заявку, Вы соглашаетесь с<br><a href="/politycs.html" class="politycs-a" target="_blank">политикой конфиденциальности</a></p>
 					</div>
 				</form>
 			</div>
@@ -87,7 +87,42 @@
 	<div class="b b-2">
 		<div class="b-block">
 			<h2>Почему Вам нужно начать этот бизнес “еще вчера”</h2>
-			<p>BTC: P 361,000.0 <span class="pov">(6,87%)</span>  ETH: $ 302.77 <span class="pon">(-2,36%)</span>  ETH: € 262.54 <span class="pon">(-1,25%)</span>  ETH: P 17,140.3 <span class="pon">(0,51%)</span>  XMR: $ 86.98 <span class="pon">(-2,2%)</span>  XMR: € 76.17 <span class="pon">(-1.49%)</span>  XMR: P 4,938.48 <span class="pon">(0.86%)</span>  LTC: $ 55.28 <span class="pon">(-2,26%)</span></p>
+			<div class="curs-code">
+				<script type="text/javascript">
+							baseUrl = "https://widgets.cryptocompare.com/";
+							var scripts = document.getElementsByTagName("script");
+							var embedder = scripts[scripts.length - 1];
+							var cccTheme = {
+								"General":
+								{
+									"priceText": "#333",
+									"showLogo": false,
+									"enableMarquee": true
+								},
+								"Trend":
+								{
+									"colorUp": "#82b440",
+									"colorDown": "#ff5252"
+								}
+							};
+							(function()
+							{
+								var appName = encodeURIComponent(window.location.hostname);
+								if (appName == "")
+								{
+									appName = "local";
+								}
+								var s = document.createElement("script");
+								s.type = "text/javascript";
+								s.async = true;
+								var theUrl = baseUrl + 'serve/v3/coin/header?fsyms=BTC,ETH,XMR,LTC,XRP&tsyms=USD,EUR,RUB';
+								s.src = theUrl + (theUrl.indexOf("?") >= 0 ? "&" : "?") + "app=" + appName;
+								embedder.parentNode.appendChild(s);
+							})();
+
+				</script>
+			</div>
+			<div class="pust"></div>
 			<div class="arguments clearfix">
 				<div class="arg-image left">
 					<img src="">
@@ -113,7 +148,7 @@
 					</div>
 				</div>
 			</div>
-			<a href="#">Получить бизнес план</a>
+			<a href="#" class="b-2-a">Получить бизнес план</a>
 		</div>
 	</div>
 
@@ -160,11 +195,11 @@
 				<form>
 					<h3>Остались вопросы? <span>Получите профессиональную консультацию!</span></h3>
 					<div class="inp-block block-1">
-						<input type="tel" required placeholder="Ваш телефон для связи">
+						<input type="tel" class="input-phone" required placeholder="Ваш телефон для связи">
 					</div>
 					<div class="inp-block block-2">
 						<input type="submit" value="Узнать подробнее">
-						<p>Оставляя заявку, Вы соглашаетесь с<br>политикой конфиденциальности</p>
+						<p>Оставляя заявку, Вы соглашаетесь с<br><a href="/politycs.html" class="politycs-a" target="_blank">политикой конфиденциальности</a></p>
 					</div>
 				</form>
 			</div>
@@ -370,9 +405,9 @@
 				<h3>Заинтересовало?<br>Получите бизнес-план!</h3>
 				<form>
 					<input class="form-inp" type="text" required placeholder="Введите имя">
-					<input class="form-inp" type="tel" required placeholder="Введите телефон">
+					<input class="form-inp input-phone" type="tel" required placeholder="Введите телефон">
 					<input class="form-btn" type="submit" value="Заказать консультацию">
-					<p>Отправляя заявку, Вы соглашаетесь<br>с политикой конфиденциальности</p>
+					<p>Отправляя заявку, Вы соглашаетесь<br>с <a href="polytics.html" class="politycs-a" target="_blank">политикой конфиденциальности</a></p>
 				</form>
 			</div>
 		</div>
@@ -395,11 +430,11 @@
 					<span>ООО</span>
 					<span>ИНН</span>
 					<span>ОГРН</span>
-					<a href="#">Политика конфиденциальности</a>
-					<a href="#">Политика обработки персональных данных</a>
+					<a href="polytics.html" target="_blank">Политика конфиденциальности</a>
+					<a href="#" target="_blank">Политика обработки персональных данных</a>
 				</div>
 				<div class="info-right right">
-					<a href="#">
+					<a href="#" target="_blank">
 						<img src="i/atk-logo.png">
 						<span>Сайт разработан компанией "ATK Group"</span>
 					</a>
