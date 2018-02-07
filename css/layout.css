@@ -612,15 +612,80 @@ input:-moz-placeholder {
 	width: 100%;
 }
 .b-3 .arg-image img.check-img {
-	width: 87.5%;
+	width: 3.8%;
 	position: absolute;
+}
+.check-1 {
+	bottom: 43%;
+	left: 6.5%;
+	-webkit-animation: anim_map 8s ease infinite;
+	-moz-animation: anim_map 8s ease infinite;
+	-ms-animation: anim_map 8s ease infinite;
+	-o-animation: anim_map 8s ease infinite;
+	animation: anim_map 8s ease infinite;
+}
+.check-2 {
+	bottom: 56%;
+	left: 13%;
+	-webkit-animation: anim_map 8s ease 1s infinite;
+	-moz-animation: anim_map 8s ease 1s infinite;
+	-ms-animation: anim_map 8s ease 1s infinite;
+	-o-animation: anim_map 8s ease 1s infinite;
+	animation: anim_map 8s ease 1s infinite;
+}
+.check-3 {
 	bottom: 13%;
 	left: 6.25%;
-	-webkit-animation: anim_map 1s ease infinite;
-	-moz-animation: anim_map 1s ease infinite;
-	-ms-animation: anim_map 1s ease infinite;
-	-o-animation: anim_map 1s ease infinite;
-	animation: anim_map 1s ease infinite;
+	-webkit-animation: anim_map 8s ease 2s infinite;
+	-moz-animation: anim_map 8s ease 2s infinite;
+	-ms-animation: anim_map 8s ease 2s infinite;
+	-o-animation: anim_map 8s ease 2s infinite;
+	animation: anim_map 8s ease 2s infinite;
+}
+.check-4 {
+	bottom: 26%;
+	left: 6.25%;
+	-webkit-animation: anim_map 8s ease 3s infinite;
+	-moz-animation: anim_map 8s ease 3s infinite;
+	-ms-animation: anim_map 8s ease 3s infinite;
+	-o-animation: anim_map 8s ease 3s infinite;
+	animation: anim_map 8s ease 3s infinite;
+}
+.check-5 {
+	bottom: 29%;
+	left: 28%;
+	-webkit-animation: anim_map 8s ease 4s infinite;
+	-moz-animation: anim_map 8s ease 4s infinite;
+	-ms-animation: anim_map 8s ease 4s infinite;
+	-o-animation: anim_map 8s ease 4s infinite;
+	animation: anim_map 8s ease 4s infinite;
+}
+.check-6 {
+	bottom: 37%;
+	left: 17%;
+	-webkit-animation: anim_map 8s ease 5s infinite;
+	-moz-animation: anim_map 8s ease 5s infinite;
+	-ms-animation: anim_map 8s ease 5s infinite;
+	-o-animation: anim_map 8s ease 5s infinite;
+	animation: anim_map 8s ease 5s infinite;
+}
+.check-7 {
+	bottom: 16%;
+	left: 40%;
+	-webkit-animation: anim_map 8s ease 6s infinite;
+	-moz-animation: anim_map 8s ease 6s infinite;
+	-ms-animation: anim_map 8s ease 6s infinite;
+	-o-animation: anim_map 8s ease 6s infinite;
+	animation: anim_map 8s ease 6s infinite;
+}
+.check-8 {
+	bottom: 23%;
+	right: 7%;
+	-webkit-animation: anim_map 8s ease 7s infinite;
+	-moz-animation: anim_map 8s ease 7s infinite;
+	-ms-animation: anim_map 8s ease 7s infinite;
+	-o-animation: anim_map 8s ease 7s infinite;
+	animation: anim_map 8s ease 7s infinite;
 }
 .b-3 .text-block {
 	position: relative;
@@ -2090,32 +2155,32 @@ input:-moz-placeholder {
 
 @-webkit-keyframes anim_map {
 	0% {transform: translateY(0px);}
-	10% {transform: translateY(-10px);}
-	20% {transform: translateY(0px);}
+	5% {transform: translateY(-10px);}
+	10% {transform: translateY(0px);}
 	100% {transform: translateY(0px);}
 }
 @-moz-keyframes anim_map {
 	0% {transform: translateY(0px);}
-	10% {transform: translateY(-10px);}
-	20% {transform: translateY(0px);}
+	5% {transform: translateY(-10px);}
+	10% {transform: translateY(0px);}
 	100% {transform: translateY(0px);}
 }
 @-ms-keyframes anim_map {
 	0% {transform: translateY(0px);}
-	10% {transform: translateY(-10px);}
-	20% {transform: translateY(0px);}
+	5% {transform: translateY(-10px);}
+	10% {transform: translateY(0px);}
 	100% {transform: translateY(0px);}
 }
 @-o-keyframes anim_map {
 	0% {transform: translateY(0px);}
-	10% {transform: translateY(-10px);}
-	20% {transform: translateY(0px);}
+	5% {transform: translateY(-10px);}
+	10% {transform: translateY(0px);}
 	100% {transform: translateY(0px);}
 }
 @keyframes anim_map {
 	0% {transform: translateY(0px);}
-	10% {transform: translateY(-10px);}
-	20% {transform: translateY(0px);}
+	5% {transform: translateY(-10px);}
+	10% {transform: translateY(0px);}
 	100% {transform: translateY(0px);}
 }
 
