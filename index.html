@@ -12,12 +12,13 @@
 	<link rel="stylesheet" href="css/reset.css" type="text/css">
 	<link href="https://fonts.googleapis.com/css?family=Roboto:100,300,400,500,700" rel="stylesheet">
 	<link rel="stylesheet" href="css/jquery.fancybox.css" type="text/css">
+	<link rel="stylesheet" href="css/slick.css" type="text/css">
 	<link rel="stylesheet" href="css/KitAnimate.css" type="text/css">
 	<link rel="stylesheet" href="css/layout.css" type="text/css">
 
 	<script type="text/javascript" src="js/jquery-2.1.1.min.js"></script>
 	<script type="text/javascript" src="js/jquery.fancybox.js"></script>
-	<script type="text/javascript" src="http://maps.google.com/maps/api/js?sensor=false"></script>
+	<script type="text/javascript" src="js/slick.js"></script>
 	<script type="text/javascript" src="js/jquery.maskedinput.min.js"></script>
 	<script type="text/javascript" src="js/jquery.validate.min.js"></script>
 	<script type="text/javascript" src="js/KitAnimate.js"></script>
@@ -26,6 +27,7 @@
 
 </head>
 <body>
+	<div class="mobile-bg"></div>
 	<div class="b header">
 		<div class="b-block">
 			<div class="header-top clearfix">
@@ -36,8 +38,11 @@
 				<div class="right-info right">
 					<span>8 (800) 000-00-00</span>
 					<a href="tel: +78000000000" style="display: none;">8 (800) 000-00-00</a>
-					<a href="#" class="zvonok-a">заказать обратный звонок</a>
+					<a href="#popup" class="zvonok-a popup-a">заказать обратный звонок</a>
 				</div>
+			</div>
+			<div class="mobile-menu-btn">
+				<div class="menu-el"></div>
 			</div>
 			<div class="header-nav clearfix">
 				<a href="#" class="first">Показатели 2017 года</a>
@@ -156,8 +161,10 @@
 		<div class="b-block">
 			<h2>Какую франшизу мы предлагаем</h2>
 			<div class="uspeh">
-				<h3>Мы заработали на этом бизнесе в 2017 году более 8 000 000 рублей</h3>
-				<p>В 2018 году произведенного оборудования будет в 10 раз больше</p>
+				<div class="uspeh-text">
+					<h3>Мы заработали на этом бизнесе в 2017 году более 8 000 000 рублей</h3>
+					<p>В 2018 году произведенного оборудования будет в 10 раз больше</p>
+				</div>
 			</div>
 			<p class="b-3-p">Мы профессионально занимаемся логистикой более 10 лет.</p>
 			<p class="b-3-p">И можем привозить оборудование для майнинга по самым низким ценам в любую точку нашей страны.</p>
@@ -166,6 +173,7 @@
 			<div class="arguments clearfix">
 				<div class="arg-image right">
 					<img src="i/map.png">
+					<img src="i/check.png" class="check-img">
 				</div>
 				<div class="text-block left">
 					<div class="arg-el arg-1">
@@ -209,7 +217,7 @@
 	<div class="b b-4">
 		<div class="b-block">
 			<h2>Оборудование и доход с продажи</h2>
-			<div class="b-4-elements">
+			<div class="b-4-elements clearfix">
 				<div class="el el-1">
 					<div class="el-image">
 						<img src="i/cooler.png">
@@ -260,7 +268,32 @@
 					</div>
 					<a href="#">Хочу начать</a>
 				</div>
-				<div class="el el-3 last">
+				<div class="el el-3">
+					<div class="el-image">
+						<img src="i/cooler.png">
+					</div>
+					<div class="el-info">
+						<h3>Antminer S9 SHA-256</h3>
+						<div class="left-text">
+							<p>Энергопотребление:</p>
+							<span>1372 W</span>
+							<p>Хэшрейт:</p>
+							<span>14 TH/s</span>
+						</div>
+						<div class="right-text">
+							<p>Доход в месяц:</p>
+							<span>от 35 000 рублей</span>
+							<p>Окупаемость:</p>
+							<span>от 2 месяцев</span>
+						</div>
+					</div>
+					<div class="profit-info">
+						<h3>60 000 рублей</h3>
+						<p>средняя прибыль с каждой продажи</p>
+					</div>
+					<a href="#">Хочу начать</a>
+				</div>
+				<div class="el el-4">
 					<div class="el-image">
 						<img src="i/cooler.png">
 					</div>
@@ -293,8 +326,10 @@
 		<div class="b-block">
 			<h2>2 варианта сотрудничества</h2>
 			<div class="uspeh">
-				<h3>Мы заработали на этом бизнесе в 2017 году более 8 000 000 рублей</h3>
-				<p>В 2018 году произведенного оборудования будет в 10 раз больше</p>
+				<div class="uspeh-text">
+					<h3>Мы заработали на этом бизнесе в 2017 году более 8 000 000 рублей</h3>
+					<p>В 2018 году произведенного оборудования будет в 10 раз больше</p>
+				</div>
 			</div>
 			<p class="b-5-p">Клиентов в 10 раз больше, чем оборудования. В 2018 году предложение восстановится.</p>
 			<p class="b-5-p">Оборудование продается сразу, как поступает - прими участие <span>в самом прибыльном бизнесе 2018 года!</span></p>
@@ -372,10 +407,62 @@
 							<p>Майнинг криптовалюты: что это и как на нем можно заработать?</p>
 						</div>
 						<div class="el-btn right">
-							<a href="#">Ответ</a>
+							<a href="#otvet-1">Ответ</a>
 						</div>
 					</div>
-					<div class="otvet">
+					<div class="otvet" id="otvet-1">
+						<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem.</p>
+					</div>
+				</div>
+				<div class="qwestion-el el-2">
+					<div class="clearfix">
+						<div class="el-text left">
+							<p>Чем отличается Asic майнер от GPU ?</p>
+						</div>
+						<div class="el-btn right">
+							<a href="#otvet-2">Ответ</a>
+						</div>
+					</div>
+					<div class="otvet" id="otvet-2">
+						<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem.</p>
+					</div>
+				</div>
+				<div class="qwestion-el el-3">
+					<div class="clearfix">
+						<div class="el-text left">
+							<p>Лучший ASIC майнер на сегодняшний день, какой выбрать?</p>
+						</div>
+						<div class="el-btn right">
+							<a href="#otvet-3">Ответ</a>
+						</div>
+					</div>
+					<div class="otvet" id="otvet-3">
+						<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem.</p>
+					</div>
+				</div>
+				<div class="qwestion-el el-4">
+					<div class="clearfix">
+						<div class="el-text left">
+							<p>SCRYPT и SHA256- отличия и особенности</p>
+						</div>
+						<div class="el-btn right">
+							<a href="#otvet-4">Ответ</a>
+						</div>
+					</div>
+					<div class="otvet" id="otvet-4">
+						<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem.</p>
+					</div>
+				</div>
+				<div class="qwestion-el el-5">
+					<div class="clearfix">
+						<div class="el-text left">
+							<p>Можно ли увеличить производительность ASIC майнера?</p>
+						</div>
+						<div class="el-btn right">
+							<a href="#otvet-5">Ответ</a>
+						</div>
+					</div>
+					<div class="otvet" id="otvet-5">
 						<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem.</p>
 					</div>
 				</div>
@@ -443,6 +530,18 @@
 		</div>
 	</div>
 
-	<div style="display:none;"></div>
+	<div style="display:none;">
+		<div class="popup" id="popup">
+			<h2>Оставьте заявку на обратный звонок</h2>
+			<h3>и мы перезвоним Вам!</h3>
+			<span>Наш менеджер перезвонит Вам сразу, как только освободится</span>
+			<form>
+				<input class="form-inp" type="text" required placeholder="Введите имя">
+				<input class="form-inp input-phone" type="tel" required placeholder="Введите телефон">
+				<input class="form-btn" type="submit" value="Заказать звонок">
+				<p>Отправляя заявку, Вы соглашаетесь<br>с <a href="polytics.html" class="politycs-a" target="_blank">политикой конфиденциальности</a></p>
+			</form>
+		</div>
+	</div>
 </body>
 </html>
